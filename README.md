@@ -19,7 +19,7 @@ database: `employees`
 
 port: `3306`
 
-### Elasticsearch 5.2.1
+### Elasticsearch 5.5.2
 
 You can install Elasticsearch on your own or use our vagrant image. Please skip below instruction if you want install on your own.
 
