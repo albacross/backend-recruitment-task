@@ -26,9 +26,11 @@ On Max OS 10.11.X vagrant 1.8.4 and VirtualBox 5.1 are incompatible. Please inst
 
 ### Populate Elasticearch 
 
-In order to complete the task you have to populate your local elasticsearch with some data. Run the file with the queries is [here]
+In order to complete the task you have to populate your local elasticsearch with some data. Run the file with the queries is [here](https://github.com/albacross/backend-recruitment-task/raw/master/populate_es.sh)
 
-### Task
+## Tasks
+
+### Task 1
 
 The task is about create a RESTful api that will support a few operations:
 
@@ -37,3 +39,12 @@ The task is about create a RESTful api that will support a few operations:
 - Fetching all employees with the salary within a range specified by the user in the query(the endpiont should support pagination)
 
 - Fetching all employees in the department specified by the user with non zero ammount of views and clicks (this piece of data should be fetched from ES and matched against the data from MySQL. Document id in ES corresponds to MySQL `department.dept_no`)
+
+### Task 2
+We have following:
+- Our customers need to add our JavaScript code into their Websites to use `Website Tracking` solution. It contains unique client id.
+- Every visit on their websites generate events that we collect and aggregate on our side.
+- We need to gather statistics when script was installed, and uninstalled.
+
+Please provide idea, architecture what would be the best approach to monitor it.
+
