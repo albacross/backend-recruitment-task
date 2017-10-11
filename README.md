@@ -33,4 +33,19 @@ On Max OS 10.11.X vagrant 1.8.4 and VirtualBox 5.1 are incompatible. Please inst
 #### Run elasticsearch
 1. In recruitment task directory run `vagrant up` (may take up to 15 minutes the first time)
 2. Check localhost:9202. You should see:
+
 ![alt text](https://github.com/albacross/backend-recruitment-task/raw/master/es-installed.png)
+
+### Populate Elasticearch 
+```
+PUT /department/stats/${dept_name}
+{
+   "stats_per_employee":[
+       {
+            "id": ${emp_no},
+            "clicks": 12,
+            "views": 120
+       }
+    ]
+}
+```
