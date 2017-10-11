@@ -12,9 +12,7 @@
 You can install Elasticsearch on your own or use our vagrant image. Please skip below instruction if you want install on your own.
 
 #### Vagrant
-1. Install [Virtualbox](https://www.virtualbox.org/wiki/Downloads) `brew cask install virtualbox`
-2. Install [Vagrant](https://www.vagrantup.com/downloads.html) `brew cask install vagrant`
-3. Install [vagrant-triggers](https://github.com/emyl/vagrant-triggers) plugin `vagrant plugin install vagrant-triggers`
+1. Install [Vagrant](https://www.vagrantup.com/downloads.html) `brew cask install vagrant`
 
 On Max OS 10.11.X vagrant 1.8.4 and VirtualBox 5.1 are incompatible. Please install vagrant 1.8.0 and VirtualBox 5.0.
 

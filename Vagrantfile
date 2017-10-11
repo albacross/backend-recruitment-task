@@ -22,14 +22,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       args: "--name elasticsearch -d --privileged=true -p 9200:9200 -p 9300:9300 -v /vagrant/elasticsearch:/usr/share/elasticsearch/config -e ES_JAVA_OPTS='-Xms1g -Xmx1g'"
     )
   end
-
-  if Vagrant.has_plugin?("vagrant-triggers")
-    # Trigger to display notification when provisioned
-    config.trigger.after :up, option: "value" do
-    end
-  else
-    puts "========================="
-    puts "You should install vagrant-triggers by running: vagrant plugin install vagrant-triggers"
-    puts "========================="
-  end
 end
