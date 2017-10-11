@@ -7,18 +7,6 @@
 
 ![alt text](https://github.com/albacross/backend-recruitment-task/raw/master/schema.png)
 
-- In order to access the database, use the following credentials:
-
-address:  `recruitment.ctfrlrhi7vyf.eu-west-1.rds.amazonaws.com`
-
-username: `albacross`
-
-password: `albacross`
-
-database: `employees`
-
-port: `3306`
-
 ### Elasticsearch 5.5.2
 
 You can install Elasticsearch on your own or use our vagrant image. Please skip below instruction if you want install on your own.
@@ -37,15 +25,15 @@ On Max OS 10.11.X vagrant 1.8.4 and VirtualBox 5.1 are incompatible. Please inst
 ![alt text](https://github.com/albacross/backend-recruitment-task/raw/master/es-installed.png)
 
 ### Populate Elasticearch 
-```
-PUT /department/stats/${dept_name}
-{
-   "stats_per_employee":[
-       {
-            "id": ${emp_no},
-            "clicks": 12,
-            "views": 120
-       }
-    ]
-}
-```
+
+In order to complete the task you have to populate your local elasticsearch with some data. Run the file with the queries is [here]
+
+### Task
+
+The task is about create a RESTful api that will support a few operations:
+
+- Fetching all employees along with their titles and departments they belong to(the endpoint should support pagination)
+
+- Fetching all employees with the salary within a range specified by the user in the query(the endpiont should support pagination)
+
+- Fetching all employees in the department specified by the user with non zero ammount of views and clicks (this piece of data should be fetched from ES and matched against the data from MySQL. Document id in ES corresponds to MySQL `department.dept_no`)
