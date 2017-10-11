@@ -28,6 +28,8 @@ On Max OS 10.11.X vagrant 1.8.4 and VirtualBox 5.1 are incompatible. Please inst
 
 In order to complete the task you have to populate your local elasticsearch with some data. Run the file with the queries is [here](https://github.com/albacross/backend-recruitment-task/raw/master/populate_es.sh)
 
+  `./populate_es.sh`
+
 ## Tasks
 
 ### Task 1
